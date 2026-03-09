@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>My Profile</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+<a href="../../index.html">EventSphere</a>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="../attendee/attendee.html">Events</a></li>
+
+<li><a href="../events/my-events.html">My Events</a></li>
+
+<li>
+<a href="../setting/setting.html" class="settings-icon">
+⚙
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+
+<!-- PROFILE SECTION -->
+
+<div class="page-container">
+
+<h1>My Profile 👤</h1>
+
+<div class="profile-card">
+
+<img id="profileImage"
+src="../../assets/default-user.png"
+class="profile-img">
+
+<input type="file" id="uploadPhoto" accept="image/*" style="display:none;">
+
+<h2 id="profileName">Loading...</h2>
+
+<p><b>Email:</b> <span id="profileEmail"></span></p>
+
+<p><b>Phone:</b> <span id="profilePhone"></span></p>
+
+<p><b>Role:</b> <span id="profileRole"></span></p>
+
+
+
+</div>
+
+</div>
+
+
+<script type="module" src="../../js/profile/profile.js"></script>
+
+</body>
+</html>

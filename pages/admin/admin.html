@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/admin.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+<a href="../../index.html">EventSphere</a>
+</div>
+
+<ul class="nav-links">
+
+<li>
+<a href="admin-approvals.html">⚡ Approvals</a>
+</li>
+
+<li>
+<img id="profilePic"
+src="../../assets/DEVIKA-PHOTO_page-0001.jpg"
+class="profile-pic">
+</li>
+
+<li>
+<a href="../setting/setting.html" class="settings-icon">⚙</a>
+</li>
+
+</ul>
+
+</nav>
+
+
+<div class="page-container">
+
+<h1>Admin Dashboard 👑</h1>
+
+<!-- STATS -->
+
+<div class="admin-stats">
+
+<div class="stat-card">
+<h3>Total Users</h3>
+<p id="totalUsers">0</p>
+</div>
+
+<div class="stat-card">
+<h3>Total Events</h3>
+<p id="totalEvents">0</p>
+</div>
+
+</div>
+
+
+<hr>
+
+
+<!-- USERS -->
+
+<h2>All Users</h2>
+
+<div id="usersList" class="admin-list">
+
+<p>Loading users...</p>
+
+</div>
+
+
+<hr>
+
+
+<!-- EVENTS -->
+
+<h2>All Events</h2>
+
+<div id="eventsList" class="admin-list">
+
+<p>Loading events...</p>
+
+</div>
+
+
+</div>
+
+
+<script type="module" src="../../js/admin/admin.js"></script>
+
+</body>
+
+</html>

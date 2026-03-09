@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Organizer Dashboard</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+<a href="../../index.html">EventSphere</a>
+</div>
+
+<ul class="nav-links">
+
+<li>
+<a href="organizer.html">Dashboard</a>
+</li>
+
+<li>
+<button id="openCreateFormBtn" class="create-nav-btn">
++ Create Event
+</button>
+</li>
+
+<li>
+<img id="profilePic"
+src="../../assets/DEVIKA-PHOTO_page-0001.jpg"
+class="profile-pic">
+</li>
+
+<li>
+<a href="../../pages/setting/setting.html" class="settings-icon">⚙</a>
+</li>
+
+</ul>
+
+</nav>
+
+
+<!-- PAGE CONTENT -->
+
+<div class="container">
+
+    <center>
+<h1>Welcome Organizer 👋</h1>
+
+</center>
+
+<hr>
+<center>
+<h2>Your Events</h2>
+</center>
+<div id="myEventsList"></div>
+
+</div>
+
+
+<!-- CREATE EVENT POPUP -->
+
+<div id="createEventForm" class="popup-form">
+
+<h2>Create Event</h2>
+
+<div class="form-group">
+<input id="eventName" placeholder="Event Name">
+</div>
+
+<div class="form-group">
+<input id="eventDate" type="date">
+</div>
+
+<div class="form-group">
+<input id="eventLocation" placeholder="Location">
+</div>
+
+<div class="form-group">
+<input id="eventImage" placeholder="Image URL">
+</div>
+
+<div class="form-group">
+<textarea id="eventDescription" placeholder="Description"></textarea>
+</div>
+
+<div class="form-group">
+
+<select id="eventCategory">
+
+<option value="">Select Category</option>
+<option value="Tech">Tech</option>
+<option value="Workshop">Workshop</option>
+<option value="Music">Music</option>
+<option value="Business">Business</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+<input id="maxAttendees" type="number" placeholder="Max Attendees">
+</div>
+
+
+<!-- BUTTONS -->
+
+<div class="popup-buttons">
+
+<button id="createEventBtn" class="create-btn">
+Create Event
+</button>
+
+<button id="cancelCreateBtn" class="cancel-btn">
+Cancel
+</button>
+
+</div>
+
+</div>
+
+
+<script type="module" src="../../js/organizer/organizer.js"></script>
+
+</body>
+</html>

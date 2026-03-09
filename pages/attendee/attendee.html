@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Attendee Dashboard</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+<nav class="navbar">
+
+<div class="logo">
+<a href="../../index.html">EventSphere</a>
+</div>
+<input 
+type="text"
+id="searchEvent"
+placeholder="Search events...">
+<ul class="nav-links">
+
+<li><a href="attendee.html">Events</a></li>
+
+<li><a href="../events/my-events.html">My Events</a></li>
+
+
+<!-- PROFILE IMAGE -->
+<li>
+<img id="profilePic"
+src="../../assets/DEVIKA-PHOTO_page-0001.jpg"
+class="profile-pic">
+</li>
+
+<li>
+<a href="../../pages/setting/setting.html" class="settings-icon">
+⚙
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+<h1>Available Events</h1>
+
+<hr>
+
+<div id="eventsList"></div>
+
+<br>
+
+
+
+<!-- TICKET POPUP -->
+
+<div id="ticketPopup" class="ticket-popup">
+
+<div class="ticket-card">
+
+<h2>Registration Successful 🎉</h2>
+
+<p id="ticketEvent"></p>
+
+<p id="ticketUser"></p>
+
+<p id="ticketDate"></p>
+<p id="ticketLocation"></p>
+
+<p id="ticketId"></p>
+<div class="ticket-buttons">
+<button class="download-btn" onclick="downloadTicket()">Download Ticket PDF</button>
+<button class="close-btn" onclick="closeTicket()">Close</button>
+
+</div>
+</div>
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script type="module" src="../../js/attendee/attendee.js"></script>
+
+
+</body>
+
+</html>

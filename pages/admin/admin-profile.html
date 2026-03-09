@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Admin Profile</title>
+
+<link rel="stylesheet" href="../../css/admin-profile.css">
+
+</head>
+
+<body>
+
+<h2>Admin Profile</h2>
+
+<div class="profile-container">
+
+<!-- PROFILE PHOTO -->
+
+<div class="profile-photo">
+
+<img id="profileImg" src="../../images/default-avatar.png" alt="Profile Photo">
+
+<input type="file" id="photoInput" accept="image/*" hidden>
+
+<button id="changePhotoBtn">Change Photo</button>
+
+</div>
+
+
+<!-- PROFILE DETAILS -->
+
+<div class="profile-details">
+
+<p><b>Name:</b> <span id="adminName"></span></p>
+
+<p><b>Email:</b> <span id="adminEmail"></span></p>
+
+<p><b>Phone:</b> <span id="adminPhone"></span></p>
+
+<p><b>Role:</b> <span id="adminRole"></span></p>
+
+</div>
+
+</div>
+
+
+<br>
+
+<a href="admin.html" class="back-link">← Back to Dashboard</a>
+
+
+<!-- JS -->
+
+<script type="module" src="../../js/admin/admin-profile.js"></script>
+
+<script type="module" src="../../js/auth/logout.js"></script>
+
+</body>
+
+</html>
